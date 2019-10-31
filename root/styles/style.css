@@ -1,0 +1,240 @@
+﻿/*
+	This file will be where you will write your CSS (cascading style sheets)
+	
+	To learn more about CSS, try visiting this link
+	
+	https://www.w3schools.com/css/
+	
+*/
+/*
+	Attributes below
+	----------------
+    T-Shirt Images Taken from user "originalmicheal"
+    https://purepng.com/originalmichael
+    License: Free for commercial use with Attribution Required
+    
+    Jam icon
+    <a href="https://icon-library.net/icon/jam-icon-26.html">Jam Icon #37164</a>
+    License: CC0 for personal use
+    
+    Code Challenge Developed by Christine Bittle
+*/
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+}
+html {
+  box-sizing:border-box;
+}
+
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+
+body{
+    color:black;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.pageContainer{
+    max-width:1200px;
+    margin:0 auto;   
+}
+.hidden{
+    position:absolute;
+    left:-20000px;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+#header{
+    background-color:#708090;
+}
+
+.websiteLogo{
+    width:150px;
+    height:auto;
+    padding-top: 30px;
+    align-content: center;
+    display:inline-block;
+    margin-bottom:2em;
+}
+.websiteLogo #logo{
+    width:150px;
+    height:auto;
+}
+
+.websiteLogo #websiteLogoTagline{
+    margin:0 auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    font-size: 1.5em;
+}
+
+.mainNavigation{
+    float:right;
+}
+
+.mainMenu{
+    text-transform: uppercase;
+    margin-top:180px;
+}
+
+.mainMenu li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left:1em;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+
+
+#mainHeading{
+    font-size:1.5em;
+    color:black;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.displayImage{
+    display:inline-block;
+    width: 50%;
+    height: auto;
+    float:left; 
+}
+
+.displayImage #selectedTshirtColor{
+    width:300px;
+    height:auto;
+    margin:0 auto;
+    
+}
+#selectedTshirtColor img{
+    width:300px;
+    height:auto;
+}
+
+#displayImageDesc{
+    text-align: center;
+    padding: 2em;
+}
+.orderingForm{
+    width: 50%;
+    height:auto;
+    display:inline-block;
+}
+h3{
+   font-size:1.5em;
+    padding:1em;
+}
+
+.formLabel{
+    font-size: 1em;
+}
+.formField{
+    padding-top:40px;
+    padding-left:40px;
+}
+#customerAddress{
+    margin-left: 40px;
+    margin-top: 1em;
+    width:400px;
+    height:200px;
+}
+
+.colorButton{
+    width:20px;
+    height: 20px;
+    margin-right:1em;
+    border-radius: 5px; 
+    border-style: none;
+}
+
+#colorType{
+    margin-top: 1em;
+}
+
+#colorType #colorGrey{
+    background-color: grey;
+    
+}
+#colorType #colorBlack{
+    background-color: black;
+    
+}
+
+#colorType #colorRed{
+    background-color: red;
+    
+}
+
+#colorType #colorBlue{
+    background-color: blue;
+    
+}
+
+#colorType #colorGreen{
+    background-color: green;
+    
+}
+
+#colorType #colorPurple{
+    background-color: purple; 
+}
+
+#deliveryLabel{
+    margin-right:20px;
+}
+
+#normalLabel{
+    margin-right:10px;
+}
+
+#orderButton{
+    margin-top:40px;
+    margin-bottom:40px;
+    width:60px;
+    height:40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border-style: none;
+    font-weight:  bold;
+    background-color: slategrey;
+    color:black;
+}
+
+footer{
+    color:white;
+    background-color: #1E1E1E;
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

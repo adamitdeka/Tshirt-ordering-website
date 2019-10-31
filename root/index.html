@@ -1,0 +1,131 @@
+ 
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- CODE JAM REQUIREMENTS -->
+        <!--
+        	The code Jam requirements are for you to build a website!
+        
+        	- please see source/design.png for the "look" of the website
+        	- please see root/images/ for the images that are provided to you
+        	- please go to this youtube link to see what an example finished product would look like
+        	
+        	https://www.youtube.com/watch?v=iXIfw2V0RC0
+        -->
+<head>
+    <link href="styles/bittsreset.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/validate.js"></script>
+    <title>T shirt ordering website</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript" src="scripts/validate.js"></script>
+   <!--Header-->
+    <header id="header">
+       <h2 class="hidden">Code jam session</h2>
+        <div class="pageContainer">
+           
+            <div class="websiteLogo">
+                
+                <img  id="logo" src="images/codejamlogo.jpg" alt="code jam logo">
+                <div id="websiteLogoTagline">HTTP Week 8</div>
+            </div>
+
+
+            <nav class="mainNavigation">
+               <ul class="mainMenu">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Merchandise</a></li>
+               </ul>  
+            </nav>
+
+
+        </div>
+    </header>
+    <!--Main-->
+    <main class=pageContainer>
+        <h1 id="mainHeading">Merchandise</h1>
+        
+        
+        <div class="displayImage">
+            <div id="displayImageDesc">
+                <span id="tshirtSizeDesc">Small</span> 
+                <span id="tshirtColorDesc">purple</span>
+                <span id="tshirtStyleDesc">crew cut</span> T-shirt
+            </div>
+            <div id="selectedTshirtColor">
+                <img id="shirtType" src="images/tshirt-purple.png" alt="a purple color tshirt">
+            </div>
+        </div>
+            
+        
+        <div class="orderingForm">
+            <h3>Your order</h3>
+                <div class="formField">
+                    <label class="formLabel">Select colour:</label>
+                    <div id="colorType">
+                        <button class="colorButton" type="button" id="colorGrey"></button>
+                        <button class="colorButton" type="button" id="colorBlack"></button>
+                        <button class="colorButton" type="button" id="colorRed"></button>
+                        <button class="colorButton" type="button" id="colorBlue"></button>
+                        <button class="colorButton" type="button" id="colorGreen"></button>
+                        <button class="colorButton" type="button" id="colorPurple"></button>
+                    </div>
+                </div>
+            
+            
+            <form class="orderDetails" action="confirm.html" method="get">
+                <div class="formField">
+                    <label for="sizeType" class="formLabel">Choose size: </label>  
+                    <select id="sizeType">
+                        <option value="default">--Select your size--</option>
+                        <option value="s">Small</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Large</option>
+                    </select>
+                </div>
+                <div class="formField">
+                    <label for="styleType" class="formLabel">Style: </label>  
+                    <select id="styleType">
+                        <option value="default">--Select your style--</option>
+                        <option value="cc">Crew cut</option>
+                        <option value="rn">Round neck</option>
+                        <option value="vn">V neck</option>
+                    </select>
+                </div>
+                
+                <div class="formField">
+                    <label for="customerName" class="formLabel">Name: </label>  
+                    <input type="text" id="customerName" placeholder="Enter your name">
+                </div>
+                
+                <div class="formField">
+                    <label for="customerAddress" class="formLabel">Address: </label >
+                </div>
+                <textarea id="customerAddress"></textarea>
+            
+                
+                <div class="formField">
+                    <label id="deliveryLabel" class="formLabel">Delivery Type</label>
+                    <input type="radio" id="normal" name="deliveryType">
+                    <label id="normalLabel" for="normal">Normal</label>
+                    <input type="radio" id="express" name="deliveryType">
+                    <label for="express" class="formLabel">Express(+$10.00)</label> 
+                </div>
+                
+                <button type="submit" id="orderButton">Order</button>
+                
+            </form>   
+        </div>  
+    </main>
+    <!--Footer-->
+    <footer >
+        <div class="pageContainer">
+            <div id="copyright">&copy; Team Noname</div>
+        </div>
+    </footer>
+    
+</body>
+</html>
